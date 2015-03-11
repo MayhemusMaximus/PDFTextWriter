@@ -28,114 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnWriteHeat = new System.Windows.Forms.Button();
-            this.txtboxOriginalPDF = new System.Windows.Forms.TextBox();
-            this.txtboxToDirectory = new System.Windows.Forms.TextBox();
-            this.btnOriginalPDFBrowse = new System.Windows.Forms.Button();
-            this.btnToDirectoryBrowse = new System.Windows.Forms.Button();
-            this.txtboxHeatNumber = new System.Windows.Forms.TextBox();
+            this.BTNWriteHeat = new System.Windows.Forms.Button();
+            this.TBOrigin = new System.Windows.Forms.TextBox();
+            this.TBDestination = new System.Windows.Forms.TextBox();
+            this.BTNOriginBrowse = new System.Windows.Forms.Button();
+            this.BTNDestinationBrowse = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.DGVFiles = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVFiles)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnWriteHeat
+            // BTNWriteHeat
             // 
-            this.btnWriteHeat.Location = new System.Drawing.Point(400, 62);
-            this.btnWriteHeat.Name = "btnWriteHeat";
-            this.btnWriteHeat.Size = new System.Drawing.Size(75, 23);
-            this.btnWriteHeat.TabIndex = 0;
-            this.btnWriteHeat.Text = "Write Heat";
-            this.btnWriteHeat.UseVisualStyleBackColor = true;
-            this.btnWriteHeat.Click += new System.EventHandler(this.WriteHeat_Click);
+            this.BTNWriteHeat.Location = new System.Drawing.Point(400, 417);
+            this.BTNWriteHeat.Name = "BTNWriteHeat";
+            this.BTNWriteHeat.Size = new System.Drawing.Size(75, 23);
+            this.BTNWriteHeat.TabIndex = 0;
+            this.BTNWriteHeat.Text = "Write Heat";
+            this.BTNWriteHeat.UseVisualStyleBackColor = true;
+            this.BTNWriteHeat.Click += new System.EventHandler(this.WriteHeat_Click);
             // 
-            // txtboxOriginalPDF
+            // TBOrigin
             // 
-            this.txtboxOriginalPDF.Location = new System.Drawing.Point(91, 12);
-            this.txtboxOriginalPDF.Name = "txtboxOriginalPDF";
-            this.txtboxOriginalPDF.ReadOnly = true;
-            this.txtboxOriginalPDF.Size = new System.Drawing.Size(303, 20);
-            this.txtboxOriginalPDF.TabIndex = 1;
+            this.TBOrigin.Location = new System.Drawing.Point(91, 12);
+            this.TBOrigin.Name = "TBOrigin";
+            this.TBOrigin.ReadOnly = true;
+            this.TBOrigin.Size = new System.Drawing.Size(303, 20);
+            this.TBOrigin.TabIndex = 1;
             // 
-            // txtboxToDirectory
+            // TBDestination
             // 
-            this.txtboxToDirectory.Location = new System.Drawing.Point(91, 38);
-            this.txtboxToDirectory.Name = "txtboxToDirectory";
-            this.txtboxToDirectory.ReadOnly = true;
-            this.txtboxToDirectory.Size = new System.Drawing.Size(303, 20);
-            this.txtboxToDirectory.TabIndex = 1;
+            this.TBDestination.Location = new System.Drawing.Point(91, 38);
+            this.TBDestination.Name = "TBDestination";
+            this.TBDestination.ReadOnly = true;
+            this.TBDestination.Size = new System.Drawing.Size(303, 20);
+            this.TBDestination.TabIndex = 1;
             // 
-            // btnOriginalPDFBrowse
+            // BTNOriginBrowse
             // 
-            this.btnOriginalPDFBrowse.Location = new System.Drawing.Point(400, 10);
-            this.btnOriginalPDFBrowse.Name = "btnOriginalPDFBrowse";
-            this.btnOriginalPDFBrowse.Size = new System.Drawing.Size(75, 23);
-            this.btnOriginalPDFBrowse.TabIndex = 0;
-            this.btnOriginalPDFBrowse.Text = "Browse";
-            this.btnOriginalPDFBrowse.UseVisualStyleBackColor = true;
-            this.btnOriginalPDFBrowse.Click += new System.EventHandler(this.BrowseFiles_Click);
+            this.BTNOriginBrowse.Location = new System.Drawing.Point(400, 10);
+            this.BTNOriginBrowse.Name = "BTNOriginBrowse";
+            this.BTNOriginBrowse.Size = new System.Drawing.Size(75, 23);
+            this.BTNOriginBrowse.TabIndex = 0;
+            this.BTNOriginBrowse.Text = "Browse";
+            this.BTNOriginBrowse.UseVisualStyleBackColor = true;
+            this.BTNOriginBrowse.Click += new System.EventHandler(this.BrowseFolder_Click);
             // 
-            // btnToDirectoryBrowse
+            // BTNDestinationBrowse
             // 
-            this.btnToDirectoryBrowse.Location = new System.Drawing.Point(400, 36);
-            this.btnToDirectoryBrowse.Name = "btnToDirectoryBrowse";
-            this.btnToDirectoryBrowse.Size = new System.Drawing.Size(75, 23);
-            this.btnToDirectoryBrowse.TabIndex = 0;
-            this.btnToDirectoryBrowse.Text = "Browse";
-            this.btnToDirectoryBrowse.UseVisualStyleBackColor = true;
-            this.btnToDirectoryBrowse.Click += new System.EventHandler(this.BF_Click);
-            // 
-            // txtboxHeatNumber
-            // 
-            this.txtboxHeatNumber.Location = new System.Drawing.Point(91, 64);
-            this.txtboxHeatNumber.Name = "txtboxHeatNumber";
-            this.txtboxHeatNumber.Size = new System.Drawing.Size(303, 20);
-            this.txtboxHeatNumber.TabIndex = 1;
+            this.BTNDestinationBrowse.Location = new System.Drawing.Point(400, 36);
+            this.BTNDestinationBrowse.Name = "BTNDestinationBrowse";
+            this.BTNDestinationBrowse.Size = new System.Drawing.Size(75, 23);
+            this.BTNDestinationBrowse.TabIndex = 0;
+            this.BTNDestinationBrowse.Text = "Browse";
+            this.BTNDestinationBrowse.UseVisualStyleBackColor = true;
+            this.BTNDestinationBrowse.Click += new System.EventHandler(this.BrowseFolder_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 15);
+            this.label1.Location = new System.Drawing.Point(48, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Original PDF";
+            this.label1.Text = "Origin:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 41);
+            this.label2.Location = new System.Drawing.Point(22, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "To Directory";
+            this.label2.Text = "Destination:";
             // 
-            // label3
+            // DGVFiles
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Heat #";
+            this.DGVFiles.AllowUserToAddRows = false;
+            this.DGVFiles.AllowUserToDeleteRows = false;
+            this.DGVFiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVFiles.Location = new System.Drawing.Point(12, 65);
+            this.DGVFiles.Name = "DGVFiles";
+            this.DGVFiles.Size = new System.Drawing.Size(463, 346);
+            this.DGVFiles.TabIndex = 3;
             // 
             // PDFHeatTextWriter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 103);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(488, 446);
+            this.Controls.Add(this.DGVFiles);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtboxHeatNumber);
-            this.Controls.Add(this.txtboxToDirectory);
-            this.Controls.Add(this.txtboxOriginalPDF);
-            this.Controls.Add(this.btnToDirectoryBrowse);
-            this.Controls.Add(this.btnOriginalPDFBrowse);
-            this.Controls.Add(this.btnWriteHeat);
+            this.Controls.Add(this.TBDestination);
+            this.Controls.Add(this.TBOrigin);
+            this.Controls.Add(this.BTNDestinationBrowse);
+            this.Controls.Add(this.BTNOriginBrowse);
+            this.Controls.Add(this.BTNWriteHeat);
             this.Name = "PDFHeatTextWriter";
             this.Text = "PDF Heat Text Writer";
             this.Load += new System.EventHandler(this.PDFHeatTextWriter_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVFiles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,15 +137,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnWriteHeat;
-        private System.Windows.Forms.TextBox txtboxOriginalPDF;
-        private System.Windows.Forms.TextBox txtboxToDirectory;
-        private System.Windows.Forms.Button btnOriginalPDFBrowse;
-        private System.Windows.Forms.Button btnToDirectoryBrowse;
-        private System.Windows.Forms.TextBox txtboxHeatNumber;
+        private System.Windows.Forms.Button BTNWriteHeat;
+        private System.Windows.Forms.TextBox TBOrigin;
+        private System.Windows.Forms.TextBox TBDestination;
+        private System.Windows.Forms.Button BTNOriginBrowse;
+        private System.Windows.Forms.Button BTNDestinationBrowse;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView DGVFiles;
     }
 }
 
